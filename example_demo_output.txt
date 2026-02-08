@@ -1,0 +1,111 @@
+
+🤖 🤖 🤖 🤖 🤖 🤖 🤖 🤖 🤖 🤖 🤖 🤖 🤖 🤖 🤖 🤖 🤖 🤖 🤖 🤖 🤖 🤖 🤖 🤖 🤖 🤖 🤖 🤖 🤖 🤖 🤖 🤖 🤖 🤖 🤖 
+======================================================================
+MINESWEEPER AI - DETAILED DEMONSTRATION
+======================================================================
+
+Board Configuration: 8x8 with 10 mines
+Total cells: 64
+Safe cells to reveal: 54
+
+----------------------------------------------------------------------
+GAME START
+----------------------------------------------------------------------
+
+──────────────────────────────────────────────────────────────────────
+MOVE #1
+──────────────────────────────────────────────────────────────────────
+Current State:
+  • Cells revealed: 0/54
+  • AI Knowledge: 0 safe cells, 0 known mines
+  • Active rules: 0
+
+AI Decision: PROBABILISTIC (Calculated guess)
+Selected cell: (6, 0)
+RESULT: Safe! ✓
+Nearby mines: 1
+New information added to knowledge base
+  → Generated 1 new inference rules
+
+──────────────────────────────────────────────────────────────────────
+MOVE #2
+──────────────────────────────────────────────────────────────────────
+Current State:
+  • Cells revealed: 1/54
+  • AI Knowledge: 1 safe cells, 0 known mines
+  • Active rules: 1
+
+AI Decision: PROBABILISTIC (Calculated guess)
+Selected cell: (5, 1)
+RESULT: Safe! ✓
+Nearby mines: 3
+New information added to knowledge base
+  → Generated 1 new inference rules
+
+──────────────────────────────────────────────────────────────────────
+MOVE #3
+──────────────────────────────────────────────────────────────────────
+Current State:
+  • Cells revealed: 2/54
+  • AI Knowledge: 2 safe cells, 0 known mines
+  • Active rules: 2
+
+AI Decision: PROBABILISTIC (Calculated guess)
+Selected cell: (7, 0)
+RESULT: Safe! ✓
+Nearby mines: 1
+New information added to knowledge base
+  → Generated 2 new inference rules
+
+──────────────────────────────────────────────────────────────────────
+MOVE #4
+──────────────────────────────────────────────────────────────────────
+Current State:
+  • Cells revealed: 3/54
+  • AI Knowledge: 3 safe cells, 0 known mines
+  • Active rules: 4
+
+AI Decision: PROBABILISTIC (Calculated guess)
+Selected cell: (4, 0)
+
+💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥
+RESULT: MINE HIT! Game Over.
+💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥💥
+
+Game Statistics:
+  • Total moves made: 4
+  • Safe (certain) moves: 0 (0.0%)
+  • Probabilistic moves: 4 (100.0%)
+  • Cells successfully revealed: 3
+  • Completion: 5.6%
+
+======================================================================
+INFERENCE ENGINE DEMONSTRATION
+======================================================================
+
+Scenario: AI reveals cell (3,3) and sees 2 nearby mines
+
+Step 1: Create initial sentence
+  Initial knowledge: {(4, 4), (2, 4), (3, 4), (4, 3), (4, 2), (2, 3), (2, 2), (3, 2)} = 2
+  (2 of these 8 cells contain mines)
+
+Step 2: After inference
+  Knowledge base has 1 sentences
+
+Scenario: AI reveals cell (2,2) and sees 1 nearby mine
+  Knowledge base now has 2 sentences
+  Known safe cells: 2
+  Known mines: 0
+
+This demonstrates how the AI:
+  ✓ Creates logical sentences from observations
+  ✓ Combines sentences to infer new information
+  ✓ Identifies safe cells and mines with certainty
+  ✓ Builds knowledge progressively
+
+======================================================================
+RUNNING 20 DEMONSTRATION GAMES
+======================================================================
+
+▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶
+Game 1/20
