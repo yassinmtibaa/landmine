@@ -1,0 +1,23 @@
+
+Minesweeper AI Project
+CS280 - Introduction to Artificial Intelligence
+Mediterranean Institute of Technology (MedTech)
+
+Student: StudentName
+Submission Date: 2026-02-08
+
+Files included:
+- minesweeper.py: Game environment
+- ai_agent.py: AI agent with inference engine
+- runner.py: Interactive GUI
+- test_ai.py: Testing framework
+- demo.py: Demonstration script
+- requirements.txt: Dependencies
+- README.md: Installation and usage guide
+- PROJECT_REPORT.md: Comprehensive project report
+
+To run:
+1. pip install -r requirements.txt
+2. python runner.py (for GUI)
+3. python test_ai.py (for testing)
+4. python demo.py (for demonstration)
