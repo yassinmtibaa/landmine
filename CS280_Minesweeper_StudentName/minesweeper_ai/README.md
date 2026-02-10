@@ -324,7 +324,7 @@ Potential enhancements:
 
 ## 👤 Author Information
 
-**Student Name(s)**: [Your Name Here]  
+**Student Name(s)**: Yassine Mtibaa & Youssef Ben Moussa  
 **Course**: CS280 – Introduction to Artificial Intelligence  
 **Institution**: Mediterranean Institute of Technology (MedTech)  
 **Date**: February 2026
